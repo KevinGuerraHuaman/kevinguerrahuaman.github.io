@@ -1,0 +1,91 @@
+
+  .wrapper{
+    display:inline-flex;
+    padding-top: 40px;
+  }
+  .wrapper .icon{
+    margin: 0 20px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    position: relative;
+    z-index:2;
+  }
+  .wrapper .icon span{
+    position:relative;
+    z-index:2;
+    height: 60px;
+    width: 60px;
+    display:block;
+    background: rgb(14, 13, 13); /*fondo de icono */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    border-radius:50%;
+    text-align:center;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon span i{
+    font-size:20px; /*tamaño de los iconos*/
+    line-height:60px;
+  }
+  .wrapper .icon .tooltip{
+    position:absolute;
+    top:0px;
+    background: rgb(182, 243, 220); /*fondo de texto inicio*/
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    font-size: 15px; /*tamaño letra de icono*/
+    padding: 10px 18px;
+    border-radius: 25px;
+    color:rgb(255, 255, 255); /*texto de iconos*/
+    opacity:0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover .tooltip{
+    opacity:1;
+    pointer-events: auto;
+    top:-70px;
+  }
+  .wrapper .icon .tooltip:before{
+    position:absolute;
+    content:"";
+    height:15px;
+    width:15px;
+    bottom:-8px;
+    left:50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .wrapper .icon:hover span,
+  .wrapp .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+  }
+  .wrapper .icon:hover span{
+    color: #fff; /*color de icono despues de colocar puntero*/
+  }
+
+  .wrapper .google:hover span,
+  .wrapper .google:hover .tooltip,
+  .wrapper .google:hover .tooltip:before{
+    background:rgb(34, 175, 93);
+  }
+  .wrapper .github:hover span,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip:before{
+    background:#333;
+  }
+  .wrapper .youtube:hover span,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip:before{
+    background:#e43124;
+  }
+  .wrapper .linkedin:hover span,
+  .wrapper .linkedin:hover .tooltip,
+  .wrapper .linkedin:hover .tooltip:before{
+    background:#2066e9;
+  }
+  .wrapper .correo:hover span,
+  .wrapper .correo:hover .tooltip,
+  .wrapper .correo:hover .tooltip:before{
+    background:#ca8f37;
+  }

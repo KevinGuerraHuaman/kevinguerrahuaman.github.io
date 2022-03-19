@@ -1,0 +1,31 @@
+
+#frase{
+    color:rgb(240, 240, 240);
+    font-style: italic;
+    font-size: 15px;
+}
+
+#foto{
+    padding-bottom: 30px;
+}
+#navigation{
+    padding-top: 15px;
+    font-size: 25px;
+}
+
+#particles-js{
+    background: rgb(43, 42, 42);
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#prima{
+    position: absolute;
+}
+
+.nav-link{
+    font-size: 25px;
+    color: rgb(172, 255, 213);
+    
+}
